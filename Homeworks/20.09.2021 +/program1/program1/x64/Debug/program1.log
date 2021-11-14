@@ -1,0 +1,6 @@
+﻿  program1.cpp
+C:\Users\79009\Desktop\Homeworks\20.09.2021 +\program1\program1\program1.cpp(6,22): warning C4305: инициализация: усечение из "__int64" в "int"
+C:\Users\79009\Desktop\Homeworks\20.09.2021 +\program1\program1\program1.cpp(6,12): warning C4309: инициализация: усечение константного значения
+C:\Users\79009\Desktop\Homeworks\20.09.2021 +\program1\program1\program1.cpp(11,11): warning C4244: =: преобразование "unsigned __int64" в "int", возможна потеря данных
+C:\Users\79009\Desktop\Homeworks\20.09.2021 +\program1\program1\program1.cpp(12,9): warning C4244: =: преобразование "unsigned __int64" в "int", возможна потеря данных
+  program1.vcxproj -> C:\Users\79009\Desktop\Homeworks\20.09.2021 +\program1\x64\Debug\program1.exe
