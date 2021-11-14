@@ -1,0 +1,5 @@
+﻿  program1.cpp
+C:\Users\79009\Desktop\Homeworks\04.10.2021\program1\program1\program1.cpp(28,18): warning C4101: N: неиспользованная локальная переменная
+C:\Users\79009\Desktop\Homeworks\04.10.2021\program1\program1\program1.cpp(28,12): warning C4101: j: неиспользованная локальная переменная
+C:\Users\79009\Desktop\Homeworks\04.10.2021\program1\program1\program1.cpp(28,9): warning C4101: i: неиспользованная локальная переменная
+  program1.vcxproj -> C:\Users\79009\Desktop\Homeworks\04.10.2021\program1\x64\Debug\program1.exe
