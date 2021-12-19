@@ -1,7 +1,7 @@
 ﻿
 #include <iostream>
 
-int Akk(int m, int n) {
+int Akk(unsigned int m, unsigned int n) {
     if (m == 0)
         return (n + 1);
 
