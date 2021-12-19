@@ -12,16 +12,18 @@ int main()
     } while ((n > 4000) || (n < 0))
 
     // M = 1000
-    if (n / 1000 != 0) {
-        int k = n / 1000;
+    int k = n / 1000;
+    if (k != 0) {
+        
         for (int i = 0; i < k; i++) {
             S = S + "M";
         }
         n = n % 1000;
     }
     // C = 100
-    if (n / 100 != 0) {
-        int k = n / 100;
+    k = n / 100;
+    if (k != 0) {
+        
         if (k == 5) {
             S = S + "D";
         }
@@ -33,8 +35,9 @@ int main()
         n = n % 100;
     }
     // X = 10
-    if (n / 10 != 0) {
-        int k = n / 10;
+    k = n / 10;
+    if (k != 0) {
+        
         if (k == 5) {
             S = S + "L";
         }
@@ -46,8 +49,9 @@ int main()
         n = n % 10;
     }
     // I = 1
-    if (n / 1 != 0) {
-        int k = n / 1;
+    k = n / 1;
+    if (k != 0) {
+        
         if (k == 5) {
             S = S + "V";
         }
