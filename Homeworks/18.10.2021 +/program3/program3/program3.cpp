@@ -9,7 +9,7 @@ int main()
     do {
         std::cout << "Write number < 4000: "; std::cin >> n;
         std::cout << std::endl;
-    } while (n > 4000);
+    } while ((n > 4000) || (n < 0))
 
     // M = 1000
     if (n / 1000 != 0) {
