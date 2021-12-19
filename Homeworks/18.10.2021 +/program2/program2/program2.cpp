@@ -1,10 +1,9 @@
 ﻿#include <iostream>
 #include <string>
 
-std::string S;
-
 void F(int n, int m) {
     int k = 0;
+    std::string S;
     while(n > 0) {
         k = n % m;
         if (k <= 9) {
