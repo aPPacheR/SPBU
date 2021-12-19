@@ -12,7 +12,6 @@ bool palindrom(char s[]) {
 int main()
 {
     char s[100];
-    while ("True") {
         std::cout << "Wtite string: "; std::cin.getline(s, 100);
 
         if (palindrom(s))
@@ -21,8 +20,6 @@ int main()
             std::cout << s << "it isn't polindrom" << std::endl;
 
         std::cout << std::endl;
-    }
-
     std::cout << std::endl;
     system("pause");
     return 0;
