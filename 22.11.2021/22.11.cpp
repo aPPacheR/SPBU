@@ -1,4 +1,4 @@
-﻿#include <fstream>
+#include <fstream>
 #include <iostream>
 #include <string>
 
@@ -58,8 +58,8 @@ int main()
         return 2;
     }
     unsigned char ch;
-    int count = 0, count_str = 1;
-    std::string s;
+    int count = 0, count_str = 0;
+    std::string s = "";
     while (inFile.peek() != EOF) {
         if (!count) outFile << number(count_str) << ": ";
         ch = inFile.get();
@@ -78,10 +78,33 @@ int main()
         }
 
     }
+    if (count != 0 && count < 8)
+    {
+        for (int i = 0; i < 8 - count; ++i)
+        {
+            outFile << "   ";
+        }
+        outFile << "| ";
+        for (int i = 0; i < 8; ++i)
+        {
+            outFile << "   ";
+        }
+        outFile << " " << s;
+    }
+    else if (count)
+    {
+        for (int i = 0; i < 16 - count; ++i)
+        {
+            outFile << "   ";
+        }
+        outFile << " " << s;
+    }
 
 
     std::cout << "Done!" << std::endl;
 
     inFile.close();
     outFile.close();
+
+    return 0;
 }
