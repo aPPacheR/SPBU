@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -19,17 +19,16 @@ int main() {
     cin >> year;
 
     int a = (14 - month) / 12;
-    int y = year - a + 1;
     int m = month + 12 * a - 2;
     int d = 0;
+    int y;
 
-    while (1) {
-        d = (day + y + y / 4 - y / 100 + y / 400 + (31 * m) / 12) % 7;
-        if (d == 5) break;
-        y += 1;
+    while (d != 5) {
+        ++year;
+        y = year - a;
+        d = (day + y + y / 4 + y / 400 - y / 100 + 31 * m / 12) % 7;
     }
-
-    cout << y;
+    cout << year;
 
     return 0;
 }
